@@ -11,7 +11,7 @@ vrv:any;
   constructor(public http:HttpClient) { }
 
   ngOnInit() {
-    this.http.post('http://localhost:8082/vrvs',{}).subscribe((data:any)=>{
+    this.http.post('https://stark-lowlands-72624.herokuapp.com/vrvs',{}).subscribe((data:any)=>{
       this.vrv=data;
       console.log(this.vrv);
      })

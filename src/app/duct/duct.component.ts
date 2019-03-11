@@ -11,7 +11,7 @@ duct:any;
   constructor(public http:HttpClient) { }
 
   ngOnInit() {
-    this.http.post('http://localhost:8082/duct',{}).subscribe((data:any)=>{
+    this.http.post('https://stark-lowlands-72624.herokuapp.com/duct',{}).subscribe((data:any)=>{
      this.duct=data;
      console.log(this.duct);
     })

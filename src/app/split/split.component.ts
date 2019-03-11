@@ -12,7 +12,7 @@ export class SplitComponent implements OnInit {
   constructor(public http:HttpClient) { }
 
   ngOnInit() {
-    this.http.post('http://localhost:8082/splits',{}).subscribe((data:any)=>{
+    this.http.post('https://stark-lowlands-72624.herokuapp.com/splits',{}).subscribe((data:any)=>{
      this.split=data;
      console.log(this.split);
     })

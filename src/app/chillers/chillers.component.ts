@@ -11,7 +11,7 @@ chiller:any;
   constructor(public http:HttpClient) { }
 
   ngOnInit() {
-    this.http.post('http://localhost:8082/chillers',{}).subscribe((data:any)=>{
+    this.http.post('https://stark-lowlands-72624.herokuapp.com/chillers',{}).subscribe((data:any)=>{
       this.chiller=data;
       console.log(this.chiller);
      })

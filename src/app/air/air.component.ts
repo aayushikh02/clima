@@ -12,7 +12,7 @@ export class AirComponent implements OnInit {
   
 
   ngOnInit() {
-     this.http.post('http://localhost:8082/airs',{}).subscribe((data:any)=>{
+     this.http.post('https://stark-lowlands-72624.herokuapp.com/airs',{}).subscribe((data:any)=>{
      this.air=data;
      console.log(this.air);
     })

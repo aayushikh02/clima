@@ -12,7 +12,7 @@ export class FloorComponent implements OnInit {
   constructor(public http:HttpClient) { }
 
   ngOnInit() {
-    this.http.post('http://localhost:8082/floor',{}).subscribe((data:any)=>{
+    this.http.post('https://stark-lowlands-72624.herokuapp.com/floor',{}).subscribe((data:any)=>{
       this.floor=data;
       console.log(this.floor);
      })

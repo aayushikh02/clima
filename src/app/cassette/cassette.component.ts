@@ -11,7 +11,7 @@ export class CassetteComponent implements OnInit {
   constructor(public http:HttpClient) { }
 
   ngOnInit() {
-    this.http.post('http://localhost:8082/cassettes',{}).subscribe((data:any)=>{
+    this.http.post('https://stark-lowlands-72624.herokuapp.com/cassettes',{}).subscribe((data:any)=>{
       this.cass=data;
       console.log(this.cass);
      })
