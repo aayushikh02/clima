@@ -1,0 +1,65 @@
+<br>
+<br>
+<div *ngIf="show">
+<h1>ENQUIRY FORM</h1>
+<BR>
+<br>
+<div class="example-container" >
+        <mat-form-field>
+          <input matInput placeholder="Name" [(ngModel)]="enquiry.name" required>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="Address" [(ngModel)]="enquiry.address" required>
+        </mat-form-field>
+        
+        <mat-form-field>
+          <input matInput placeholder="City" [(ngModel)]="enquiry.city" required>
+        </mat-form-field>
+        
+        <mat-form-field>
+          <input matInput placeholder="State" [(ngModel)]="enquiry.state" required>
+        </mat-form-field>
+        
+        <mat-form-field>
+          <input matInput placeholder="Country" [(ngModel)]="enquiry.country" required>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input matInput placeholder="Phone No." [(ngModel)]="enquiry.phone" required>
+        </mat-form-field>
+        
+        <mat-form-field>
+          <input matInput placeholder="Enter your email" [formControl]="email" [(ngModel)]="enquiry.mail" required>
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <textarea matInput placeholder="Message" [(ngModel)]="enquiry.message" required></textarea>
+        </mat-form-field>
+        <button (click)="add()" type="button" class="btn btn-primary btn-lg"  style="display: block !important;
+        margin: auto !important;">
+            SUBMIT</button>
+      </div>
+    </div>
+<div *ngIf="!show">
+    <div *ngIf="showi">
+        <br>
+        <br>
+      <h1 style="text-align:center;color: rgb(70, 70, 182) !important;">Your enquiry is submitted successfully.</h1>
+    </div>
+
+    <div *ngIf="!showi">
+        <br>
+        <br>
+        <h1 style="text-align:center;color: rgb(70, 70, 182) !important;">Something went wrong.Please try again</h1>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+      <!-- routerLink="/Resident" routerLinkActive="active" -->

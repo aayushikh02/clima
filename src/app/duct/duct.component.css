@@ -1,0 +1,10 @@
+
+.one{
+    margin-right: -55px !important;
+    margin-left: 45px !important;
+  }
+  @media only screen and (max-width: 992px){
+  .one{
+    margin:auto !important;
+  }
+  }

@@ -1,0 +1,30 @@
+<div class="container" style="overflow:  hidden; ">
+  <div class="row example-cards one" style="padding:20px;">
+      <mat-card class="example-card col-md-3 " *ngFor="let j of this.air" style="margin: 25px !important;padding: 15px;">
+          <mat-card-header>
+            <!-- <div mat-card-avatar class="example-header-image"></div> -->
+            <mat-card-title>{{j.h1}}</mat-card-title>
+      
+          </mat-card-header>
+          <img mat-card-image src="{{j.img}}" alt="Photo of a Reliance Mart">
+          <mat-card-content>
+            <p>
+                {{j.p}}
+            </p>
+              <div class="row">
+                  <div class="col-md-6 col-6" style="text-align: left;font-size: 15px;color:rgba(0, 0, 0, 0.637);">
+                      <strong>Model:</strong>
+                  </div>
+                  <div class="col-md-6 col-6" style="text-align: left;font-size: 15px;">
+                      {{j.type}}
+                  </div>
+              </div>
+  
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>

@@ -1,0 +1,111 @@
+<!-- <mat-toolbar>
+    <div class="col-md-6">
+      <a [routerLink]="['/Home']"><img src="../assets/logo1.jpg" class="logo"></a>
+    </div>
+    <div class="col-md-6"> -->
+        <!-- <span class="con" style="color:gray;">E-mail : </span> <a class="con" style="color:black;font-size: 16px;font-family: Arial, Helvetica, sans-serif;" href="mailto:arvind@climatech.in"> arvind@climatech.in</a> ,<a style="color:black;font-size: 16px;font-family: Arial, Helvetica, sans-serif;" href="mailto:service@climatech.in"> service@climatech.in</a><br/> -->
+        <!-- E-mail:	arvind@climatech.in, service@climatech.in<br/> -->
+        <!-- <span class="con" style="color:gray;">Phone Number : </span><a class="con" style="color:black;font-size: 16px;font-family: Arial, Helvetica, sans-serif;" href="tel:+919829063957">+91 9829063957</a> -->
+      <!-- <a href="arvind@climatech.in"> <img src="../assets/gmail-512.png" alt="mail" class="mail"></a>  
+      <a href=""> <img src="../assets/fb.png" alt="fb" class="fb"></a>   -->
+    <!-- </div>
+</mat-toolbar> -->
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" [routerLink]="['/Home']"><img src="../assets/logo1.jpg" class="logo"></a>
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown" style="margin-left: 11%">
+          <ul class="navbar-nav">
+            <li class="nav-item " [routerLinkActive]="['active']" data-toggle="collapse" data-target="#navbarNavDropdown">
+              <a class="nav-link" [routerLink]="['/Home']" >Home</a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']" data-toggle="collapse" data-target="#navbarNavDropdown">
+              <a class="nav-link" [routerLink]="['/AboutUs']" >About Us</a>
+            </li>
+            
+            <li class="nav-item dropdown" [routerLinkActive]="['active']">
+              <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Products
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" [routerLink]="['Products/Resident']">Residential</a>
+                <a class="dropdown-item" [routerLink]="['Products/Commercial']">Commercial</a>
+                <a class="dropdown-item" [routerLink]="['Products/Industrial']">Industrial</a>
+              </div>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']" data-toggle="collapse" data-target="#navbarNavDropdown">
+              <a class="nav-link" [routerLink]="['/Service']" >Service</a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']" data-toggle="collapse" data-target="#navbarNavDropdown">
+                    <a class="nav-link" [routerLink]="['/Our-Clients']" >Our-Clients</a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']" data-toggle="collapse" data-target="#navbarNavDropdown">
+                    <a class="nav-link" [routerLink]="['/Enquiry']">Enquiry</a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']" data-toggle="collapse" data-target="#navbarNavDropdown">
+                    <a class="nav-link" [routerLink]="['/Contact']">Contact</a>
+            </li>
+            
+          </ul> 
+        </div>
+      </nav>
+
+      <!-- <li class="nav-item" [routerLinkActive]="['active']"  data-toggle="collapse" data-target="#navbarNavDropdown">
+        <a class="nav-link" [routerLink]="['/Products']">Products</a>
+      </li> -->
+
+
+
+  <router-outlet></router-outlet>
+
+  <footer style="background-color:rgb(109, 103, 103);opacity:0.8;">
+    <div class="row foot" style="margin: 0px !important;padding: 20px;font-size: 13px">
+        <div class="col-md-2">
+            
+          </div>
+      <div class="col-md-2 " style="width: 50% !important;">
+        <ul style="color:white;">
+            <li><a class="nav-link" [routerLink]="['/Home']" style="color:white;">Home</a></li>
+            <li><a class="nav-link" [routerLink]="['/AboutUs']" style="color:white;">About Us</a></li>
+            <li><a class="nav-link" [routerLink]="['/Service']" style="color:white;">Service</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 " style="width: 50% !important;">
+        <ul style="color:white;">
+          <li><a class="nav-link" [routerLink]="['/Our-Clients']" style="color:white;">Our Clients</a></li>
+          <li><a class="nav-link" [routerLink]="['/Enquiry']" style="color:white;">Enquiry</a></li>
+          <li><a class="nav-link" [routerLink]="['/Contact']" style="color:white;">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 " style="width: 50% !important;">
+        <ul style="color:white;">
+          <li><a class="nav-link" [routerLink]="['/Products/Resident/split']" style="color:white;">Split</a></li>
+          <li><a class="nav-link" [routerLink]="['Products/Resident/air']" style="color:white;">Air Purifier</a></li>
+          <li><a class="nav-link" [routerLink]="['Products/Commercial/cassette']" style="color:white;">Cassette</a></li>
+        </ul>
+        </div>
+        <div class="col-md-2 " style="width: 50% !important;">
+          <ul style="color:white;">
+              <li><a class="nav-link" [routerLink]="['Products/Commercial/duct']" style="color:white;">Duct</a></li>
+              <li><a class="nav-link" [routerLink]="['Products/Commercial/vrv']" style="color:white;">VRV</a></li>
+              <li><a class="nav-link" [routerLink]="['Products/Commercial/roof']" style="color:white;">Roof</a></li>
+              <li><a class="nav-link" [routerLink]="['Products/Industrial/chillers']" style="color:white;">Chiller</a></li>
+          </ul>
+        
+          </div>
+          <div class="col-md-2">
+
+          </div>
+        
+    </div>
+    <hr>
+    <p style="color:white;text-align: center;">© 2011-2019 CLIMATECH AIRCON ENGINEERS PVT. LTD. - All Rights Reserved.</p>
+    <hr>
+    <p style="color:white;text-align: center;">Site by ~ Aayushi</p>
+    <br>
+  </footer> 

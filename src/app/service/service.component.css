@@ -1,0 +1,31 @@
+.servicebg{
+    width:100%;
+}
+h1{
+    text-align: center;
+    color:palevioletred;
+    font-size: 45px;
+}
+h4{
+    text-align: center;
+    color:rgb(129, 120, 120);
+    font-size:20px;
+}
+
+h2{
+    text-align: center;
+    color:rgb(204, 112, 216);
+    font-size: 45px;
+}
+.bg{
+    /* background-color: rgba(175, 157, 157, 0.5); */
+    padding: 10px;
+}
+
+.que{
+    font-size: 30px;
+}
+
+p{
+    font-size:20px;
+}

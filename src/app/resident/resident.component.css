@@ -1,0 +1,48 @@
+.bg{
+    width:100% !important;
+    height:60% !important;
+}
+.box{
+    padding: 20px;
+}
+.split{
+    width:70%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;       
+
+}
+.air{
+    width:70%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;       
+
+}
+p{
+    width:80%;
+    text-align: center;
+    margin:auto !important;
+}
+.col-md-6{
+    padding: 10px;
+}
+
+
+h2{
+    color: rgba(0, 0, 255, 0.856) !important;
+}
+
+
+
+@media only screen and (max-width: 479px){
+    .bg{
+        height: 100%;
+    }
+    .split{
+        width:100%;
+    }
+    .air{
+        width:100%;
+    }
+}

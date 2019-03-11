@@ -1,0 +1,15 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 60%;
+    margin-left: 20%;
+  }
+  
+  h1{
+    color:rgba(255, 192, 203, 0.795) !important;
+    font-size: 40px !important;
+    text-align: center;
+  }
